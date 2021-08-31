@@ -1,0 +1,112 @@
+
+    .download-comp-card {
+        box-shadow: 0 3px 6px rgba(0,0,0,.2);
+        .card-body {
+            h5{
+                &.card-title {
+                    font-size: 20px;
+                    font-weight: 400;
+                    line-height: 19px;
+                    color: #000;
+                }
+            }
+            pre {
+                &.card-text {
+                    font-family: 'Roboto', sans-serif;
+                    font-size: 12px;
+                    font-weight: 400;
+                    line-height: 14px;
+                    color: #000;
+                }
+            }
+            .readme{
+                background: transparent;
+                border: none;
+                color: #1976D2;
+                padding: 0;
+                float: right;
+                margin-top: 10px;
+                font-size: 12px;
+                text-decoration: underline;             
+            }
+            
+        }        
+    }
+    .btn-outline-download {
+        color: #fff;
+        border: 1px solid #007bff;
+        background: #fff;
+        font-size: 14px;
+        font-weight: 400;
+        background: #007bff;                
+        span {
+            padding-right: 9px;
+        } 
+        &:hover {
+            color: #fff;
+            border: 1px solid #0069d9;
+            background: #0069d9;
+        }              
+    }
+    .btn-outline-download.basic-download{
+        background: url(../img/download-folder.svg) no-repeat 12px 6px #007bff;  
+        padding: 5px 15px 5px 35px;
+        &:hover {
+            background: url(../img/download-folder.svg) no-repeat 12px 6px #0069d9;
+        }   
+    }    
+    
+.basic-comp-card {
+    h5 {
+        &.card-title {
+            font-size: 16px;
+            color: #263238;
+        }
+    }
+    ul {
+        list-style: none;
+        li {
+            label {
+                font-size: 16px;
+                padding-left: 10px;
+                color: #263238;
+            }
+        }
+    }
+}
+.project-components-select {
+    padding: 10px;
+    min-width: 195px;
+    height: 45px;
+    border-radius: 5px;
+    background: #1976D2;
+    color: #fff;
+    font-size: 16px;
+    -webkit-appearance: none;
+    appearance: none;
+    &::before {
+        content: "\f078";
+    }
+    option {
+        background: #fff;
+        color: #1976D2;
+        padding: 10px;
+        min-width: 195px;
+        height: 45px;
+        font-size: 16px;
+        &:hover {
+            background: #1976D2;
+            color: #fff;
+        }
+    }
+}
+.project-select-arrow {
+    position: relative;
+    left: -30px;
+    font-size: 18px;
+    color: #fff;
+}
+.download-btn {
+    min-width: 200px;
+    padding: 12px 10px;
+}

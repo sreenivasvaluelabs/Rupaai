@@ -1,0 +1,121 @@
+.load-more {
+    text-align: center;
+    float: left;
+    width: 100%;
+    margin: 15px 0 50px;
+}
+.sample-datatable {
+    position: relative;
+    margin: 30px 0;
+}
+.sample-datatable thead {
+    background: #474b55;
+    color: #fff;
+    text-transform: uppercase;
+}
+.sample-datatable thead th {
+    padding: 10px;
+    position: relative;
+    white-space: nowrap;
+}
+.sample-datatable thead th:focus {
+    outline: none;
+}
+.sample-datatable thead th .custom-filter {
+    margin: 0 0 0 10px;
+}
+.sample-datatable thead th .custom-filter .dropdown-menu {
+    color: #474b55;
+}
+.sample-datatable thead th .custom-filter .dropdown-menu .filter-header {
+    text-transform: capitalize;
+    font-size: 16px;
+}
+.sample-datatable thead th.sorting {
+    padding: 10px;
+}
+.sample-datatable thead th.sorting_asc {
+    padding: 10px;
+}
+.sample-datatable thead th.sorting_desc {
+    padding: 10px;
+}
+.sample-datatable tbody td i {
+    padding-right: 5px;
+}
+.sample-datatable tbody td i.activity-icon {
+    padding-right: 20px;
+}
+.sample-datatable tbody td a {
+    color: #197ee3;
+    text-decoration: underline;
+}
+.sample-datatable tbody td a i {
+    padding-left: 5px;
+}
+.sample-datatable tbody td a + a {
+    margin-left: 20px;
+}
+.sample-datatable tbody td a.tooltip-wrap {
+    text-decoration: none;
+}
+.sample-datatable tbody td p {
+    margin-bottom: 0;
+}
+.sample-datatable div.dataTables_info {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+.sample-datatable div.dataTables_info + div.dataTables_paginate {
+    display: none;
+}
+.sample-datatable .dt-more-container {
+    margin: 30px 0;
+}
+.dataTables_length, .dataTables_filter {
+    display: none;
+}
+[data-customfilter-dropdown] {
+    position: absolute;
+}
+[data-customfilter-dropdown] select, [data-customfilter-dropdown] .checkbox label {
+    text-transform: capitalize;
+}
+[data-customfilter-dropdown] .dropdown-menu {
+    padding: 15px;
+    width: 230px;
+    max-height: 280px;
+    overflow-y: auto;
+    margin: 0;
+}
+[data-customfilter-dropdown] .dropdown-menu label p {
+    margin-bottom: 0;
+}
+[data-customfilter-dropdown] .dropdown-menu .close-menu.fa.fa-times {
+    float: right;
+    cursor: pointer;
+}
+[data-customfilter-dropdown] .dropdown-menu .close-menu.fa.fa-times:hover {
+    text-decoration: none;
+}
+[data-customfilter-dropdown] .dropdown-menu .filter-header {
+    margin: 15px 0;
+    font-size: 16px;
+}
+[data-customfilter-dropdown] .dropdown-menu .filter-button-wrapper {
+    margin-top: 20px;
+}
+[data-customfilter-dropdown] .dropdown-menu .filter-button-wrapper a.btn.btn-default {
+    width: 100%;
+    color: #fff;
+    background-color: #197ee3;
+}
+.load-datatable .btn-action {
+   background-color: #197ee3;
+   padding: 7px 30px;
+   border-radius: 20px;
+   color: #fff;
+   font-size: 16px;
+   border: none;
+}

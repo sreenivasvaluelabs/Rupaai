@@ -1,0 +1,31 @@
+{
+    "name": "unibail",
+    "description": "Unibail Centers Prototype",
+    "version": "2.0.0",
+    "ignore": [
+        "**/.*",
+        "_*",
+        "docs-assets",
+        "examples",
+        "/fonts",
+        "js/tests",
+        "CNAME",
+        "CONTRIBUTING.md",
+        "composer.json",
+        "*.html"
+    ],
+    "devDependencies": {
+        "bootstrap-sass": "^3.3.7",
+        "jquery-ui": "^1.12.1",
+        "modernizr": "^3.5.0",
+        "jquery-validation": "^1.16.0",
+        "nouislider": "^9.2.0",
+        "jquery-mousewheel": "^3.1.13",
+        "slick-carousel": "^1.6.0",
+        "within-viewport": "^1.0.0",
+        "he": "^1.1.1"
+    },
+    "dependencies": {
+        "popper.js": "^1.12.3"
+    }
+}

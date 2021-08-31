@@ -1,0 +1,16 @@
+.article-container .article-lead-image img {
+  width: 100%;
+  height: auto; }
+
+.article-container .article-date {
+  margin: 1rem 0; }
+
+.article-container .article-title {
+  color: #000; }
+
+.article-container .article-body p {
+  color: #000; }
+
+.article-title, .article-author, .article-summary {
+  height: 25px;
+  overflow: hidden; }

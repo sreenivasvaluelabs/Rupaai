@@ -1,0 +1,43 @@
+.component-list
+    .row.project-item
+        .col-md-3
+            .custom-control.custom-radio.mb-3
+                input(type="radio" class="custom-control-input" id="project1" name="projectSelection" value="1")
+                label(class="custom-control-label" for="project1") Project 1
+        .col-md-3
+            .custom-control.custom-radio.mb-3
+                input(type="radio" class="custom-control-input" id="project2" name="projectSelection" value="2")
+                label(class="custom-control-label" for="project2") Project 2
+    .row
+        .col-md-12.comp_item#project-1
+            h3 Component1 List        
+            .custom-control.custom-checkbox.mb-3
+                input(type="checkbox" class="custom-control-input" id="custom-tabs" name="example1" pathhtml="src/views/components/nav/custom-tabs.njk", pathscss="src/scss/component/nav/custom-tabs.scss", pathjs="src/js/components/nav/tab.js")
+                label(class="custom-control-label" for="custom-tabs") Tabs
+            .custom-control.custom-checkbox.mb-3
+                input(type="checkbox" class="custom-control-input" id="custom-pills" name="example1" pathhtml="src/views/components/nav/custom-pills.njk", pathscss="src/scss/component/nav/custom-pills.scss", pathjs="src/js/components/nav/tab.js")
+                label(class="custom-control-label" for="custom-pills") Pills
+            .custom-control.custom-checkbox.mb-3
+                input(type="checkbox" class="custom-control-input" id="custom-nav-list" name="example1" pathhtml="src/views/components/nav/custom-nav-list.njk", pathscss="src/scss/component/nav/custom-nav-list.scss", pathjs="src/js/components/nav/tab.js")
+                label(class="custom-control-label" for="custom-nav-list") Nav list
+            .custom-control.custom-checkbox.mb-3
+                input(type="checkbox" class="custom-control-input" id="Carousel" name="example1" pathhtml="src/views/components/carousel/custom-carousel.njk", pathscss="src/scss/component/carousel/custom-carousel.scss", pathjs="src/js/components/nav/tab.js")
+                label(class="custom-control-label" for="Carousel") Carousel
+    .row
+        .col-md-12.comp_item#project-2
+            h3 Component2 List        
+            .custom-control.custom-checkbox.mb-3
+                input(type="checkbox" class="custom-control-input" id="custom-tabs1" name="example2" pathhtml="src/views/components/nav/custom-tabs.njk", pathscss="src/scss/component/nav/custom-tabs.scss", pathjs="src/js/components/nav/tab.js")
+                label(class="custom-control-label" for="custom-tabs1") Tabs
+            .custom-control.custom-checkbox.mb-3
+                input(type="checkbox" class="custom-control-input" id="custom-pills1" name="example2" pathhtml="src/views/components/nav/custom-pills.njk", pathscss="src/scss/component/nav/custom-pills.scss", pathjs="src/js/components/nav/tab.js")
+                label(class="custom-control-label" for="custom-pills1") Pills
+            .custom-control.custom-checkbox.mb-3
+                input(type="checkbox" class="custom-control-input" id="custom-nav-list1" name="example2" pathhtml="src/views/components/nav/custom-nav-list.njk", pathscss="src/scss/component/nav/custom-nav-list.scss", pathjs="src/js/components/nav/tab.js")
+                label(class="custom-control-label" for="custom-nav-list1") Nav list
+            .custom-control.custom-checkbox.mb-3
+                input(type="checkbox" class="custom-control-input" id="Carousel1" name="example2" pathhtml="src/views/components/carousel/custom-carousel.njk", pathscss="src/scss/component/carousel/custom-carousel.scss", pathjs="src/js/components/nav/tab.js")
+                label(class="custom-control-label" for="Carousel1") Carousel
+    .row
+        .col-md-12
+            a(class="btn btn-outline-info px-4" href="" id="custom-d" onClick="downloadComponents(this.id)" download) Customize download

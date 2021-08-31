@@ -1,0 +1,1 @@
+var clipboard=new ClipboardJS(".btn-copy");clipboard.on("success",function(o){o.clearSelection()}),clipboard.on("error",function(o){});

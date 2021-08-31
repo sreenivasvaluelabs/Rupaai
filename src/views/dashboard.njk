@@ -1,0 +1,97 @@
+{% extends "one-column-content-page.njk" %}
+{% block header %}
+<div class="container-fluid p-0">
+{% include "../views/components/dashboard/dashboard-header.njk" %} 
+</div>
+{% endblock %}
+{% block main %}
+<div id="wrapper">
+  <div id="sidebar-wrapper">
+    {% include "../views/components/dashboard/dashboard-nav.njk" %}  
+  </div>
+  <div id="page-content-wrapper">
+      <div class="container-fluid m-0 p-0">
+        {% include "../views/components/dashboard/dashboard-bread.njk" %} 
+      </div>
+      <div class="search-bar">
+        {% include "../views/components/search/search.njk" %}
+      </div>
+      <div id="dashboard" class="components-toggle"> 
+        {% include "../views/components/carousel/carousel-dashboard.njk" %}     
+        {% include "../views/components/trending-components/top-trending-components.njk" %}
+        {% include "../views/components/trending-components/most-downloaded-components.njk" %}
+      </div>
+
+      {# components lists starts#}
+
+      <div id="datatable" class="components-toggle">
+        {% include "../views/components/datatable/datatable-custom.njk" %}
+      </div>  
+
+      <div id="accordion" class="components-toggle">
+        {% include "../views/components/accordion/accordion.njk" %}
+      </div>         
+
+      <div id="banner" class="components-toggle">
+        {% include "../views/components/banner/banner.njk" %}
+      </div>
+
+      <div id="breadcrumb" class="components-toggle">
+        {% include "../views/components/breadcrumb/breadcrumb.njk" %}
+      </div>
+
+      <div id="cards" class="components-toggle">
+        {% include "../views/components/cards/cards.njk" %}
+      </div>
+
+      <div id="carousel" class="components-toggle">
+        {% include "../views/components/carousel/carousel.njk" %}
+      </div>
+
+      <div id="healthcare-accordion" class="components-toggle">
+        {% include "../views/components/healthcare/healthcare-accordion.njk" %}
+      </div>
+      <div id="healthcare-cta" class="components-toggle">
+        {% include "../views/components/healthcare/healthcare-cta.njk" %}
+      </div>
+      <div id="healthcare" class="components-toggle">
+        {% include "../views/components/healthcare/healthcare.njk" %}
+      </div>
+
+      <div id="nav" class="components-toggle">
+        {% include "../views/components/nav/nav.njk" %}
+      </div>
+      <div id="tabs" class="components-toggle">
+        {% include "../views/components/tabs/tabs.njk" %}
+      </div>
+      <div id="modalpopup" class="components-toggle">
+        {% include "../views/components/modalpopup/modalpopup.njk" %}
+      </div>
+      <div id="pagination" class="components-toggle">
+        {% include "../views/components/pagination/pagination.njk" %}
+      </div>
+      <div id="testimonial" class="components-toggle">
+        {% include "../views/components/testimonial/testimonial.njk" %}
+      </div>      
+      <div id="timeline" class="components-toggle">
+        {% include "../views/components/timeline/timeline.njk" %}
+      </div>
+      <div id="popover" class="components-toggle">
+        {% include "../views/components/popover/popover.njk" %}
+      </div>
+      <div id="progressbar" class="components-toggle">
+        {% include "../views/components/progressbar/progressbar.njk" %}
+      </div>
+      <div id="scrolltopbottom" class="components-toggle">
+        {% include "../views/components/scrolltopbottom/scrolltopbottom.njk" %}
+      </div>                  
+      {# components lists ends#}
+      <div id="downloadpage" class="components-toggle">
+        {% include "../views/components/download/download.njk" %}
+      </div>
+      <div class="editanddownload">
+        {% include "../views/editor/index.html" %}
+      </div>      
+  </div>
+</div>
+{% endblock %}

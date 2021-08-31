@@ -1,0 +1,53 @@
+.accordion-component {
+  margin-bottom: 30px; }
+  .accordion-component .accordion-controls {
+    text-align: right;
+    padding: 0 0 10px 0; }
+  .accordion-component .card {
+    border: 1px solid #cbcbcb !important;
+    background: #fff;
+    border-radius: 0;
+    margin: 0 0 5px 0; }
+    .accordion-component .card .card-header {
+      border: 1px solid #cbcbcb;
+      border-radius: 0;
+      color: #232323;
+      padding-left: 30px !important;
+      padding-right: 10px !important;
+      cursor: pointer; }
+      .accordion-component .card .card-header:first-child {
+        border-radius: 0; }
+    .accordion-component .card .card-body {
+      border: 1px solid #cbcbcb;
+      border-radius: 0;
+      background-color: #fff;
+      color: black;
+      padding-left: 30px !important;
+      padding-top: 15px !important;
+      margin-top: 0px; }
+
+@media only screen and (min-width: 320px) and (max-width: 1023px) {
+  .accordion-component {
+    max-width: 100%;
+    padding: 0px 0px 30px 0px; } }
+
+@media only screen and (min-width: 1024px) and (max-width: 1198px) {
+  .accordion-component {
+    /* width:619px;*/
+    padding: 0px 40px 30px 0; } }
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .accordion .card-header {
+    padding-right: 30px !important; } }
+
+@media only screen and (max-width: 767px) {
+  .accordion-component {
+    padding: 0px 0px 30px 0px; }
+  .accordion-component .accordion .card .card-body {
+    margin-top: 0px !important; } }
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .accordion-tabs .accordion {
+    padding-left: 5px; }
+  .accordion .card .card-body {
+    margin-top: 0px !important; } }

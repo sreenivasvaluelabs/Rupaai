@@ -1,0 +1,26 @@
+{
+    "src": {
+        "sass": "src/scss",
+        "pug": "src/views",
+        "njk": "src/views",
+        "js": "src/js",
+        "image": "src/images",
+        "vendor": "src/vendor",
+        "font": "src/font/roboto"
+    },
+    "dest": {
+        "css": "css",
+        "html": "./",
+        "js":"js",
+        "image": "img",
+        "vendor": "src/vendor",
+        "font": "font/roboto"
+    },
+    "kitchensink": {
+        "src": [
+            "src/js/kitchensink/component-scroll.js",
+            "src/js/kitchensink/kitchensink-components.js"
+        ],
+        "dest": "js"
+    }
+}

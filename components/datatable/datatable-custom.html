@@ -1,0 +1,90 @@
+
+
+    <div class="container">                        
+            <div class="load-datatable" id="billing-history-wrapper">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3>Sample DataTable</h3>
+                        </div>
+                      <div class="col-md-9">   
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolorsit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus        </p>
+                      </div>
+                      <div class="col-md-3">
+                        <button class="btn-action pull-right" id="billing-export-csv">Download to .CSV</button>
+                      </div>
+                    </div>
+                    <div class="table-responsive sample-datatable">
+                      <table class="display" id="sample-table" cellspacing="0" width="100%">
+                        <thead>
+                          <tr>
+                            <th data-filter="data-activitydate-filter"> <span class="sort-icon">Date</span></th>
+                            <th data-filter="data-activity-filter">   <span class="sort-icon">Activity</span></th>
+                            <th data-filter="data-amount-filter">                                                                      <span class="sort-icon">Amount</span></th>
+                            <th data-filter="data-payment-filter"> <span class="sort-icon">Payment Method</span></th>
+                            <th> <span>PDFs</span></th>
+                          </tr>
+                        </thead>
+                      </table>
+                      <div class="dt-more-container text-center">
+                        <button class="btn-action" id="billing-load-more" style="display:none;">Load More</button>
+                      </div>
+                    </div>
+                    <div class="d-none" data-activity-filter data-customfilter-dropdown>
+                      <div class="dropdown-menu d-block" role="menu" aria-label="dropdownMenu"><span class="close-menu fa fa-times"></span>
+                        <div class="filter-header">Filter by Activity:      </div>
+                        <div class="row filter-button-wrapper">
+                          <div class="col-xs-6"><a class="btn btn-default clear-activity" data-clear-filter>Clear</a></div>
+                          <div class="col-xs-6"><a class="btn btn-default" data-update-activity>Update</a></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-none" data-amount-filter data-customfilter-dropdown>
+                      <div class="dropdown-menu d-block" role="menu" aria-label="dropdownMenu"><span class="close-menu fa fa-times"></span>
+                        <div class="filter-header">Filter by Amount:</div>
+                        <div class="form-group">
+                          <label for="minAmount">Minimum Amount</label>
+                          <input class="form-control" name="minAmount" id="minAmount" type="text" placeholder="$" aria-label="minAmount" onkeypress="return amountValidate(event)">
+                        </div>
+                        <div class="form-group">
+                          <label for="maxAmount">Maximum Amount</label>
+                          <input class="form-control" name="maxAmount" id="maxAmount" type="text" placeholder="$" aria-label="maxAmount" onkeypress="return amountValidate(event)">
+                        </div>
+                        <div class="row filter-button-wrapper">
+                          <div class="col-xs-6"><a class="btn btn-default clear-amount" data-clear-filter>Clear</a></div>
+                          <div class="col-xs-6"><a class="btn btn-default" data-update-amount>Update </a></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-none" data-payment-filter data-customfilter-dropdown>
+                      <div class="dropdown-menu d-block" role="menu" aria-label="dropdownMenu"><span class="close-menu fa fa-times"></span>
+                        <div class="filter-header">Filter by Payment Method:      </div>
+                        <div class="row filter-button-wrapper">
+                          <div class="col-xs-6"><a class="btn btn-default clear-payment" data-clear-filter>Clear</a></div>
+                          <div class="col-xs-6"><a class="btn btn-default" data-update-payment>Update</a></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-none" data-activitydate-filter data-customfilter-dropdown>
+                      <div class="dropdown-menu d-block" role="menu" aria-label="dropdownMenu"><span class="close-menu fa fa-times"></span>
+                        <div class="filter-header">Filter by Date:</div>
+                        <div class="form-group">
+                          <label for="billingFromDate">From</label>
+                          <div class="input-group date" id="billingFromDate">
+                            <input class="form-control" name="billingFromDate" type="text" aria-label="billingFromDate" placeholder="DD/MM/YYYY"><span class="input-group-addon"><span class="fa fa-calendar">         </span></span>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="billingToDate">To</label>
+                          <div class="input-group date" id="billingToDate">
+                            <input class="form-control" name="billingToDate" type="text" aria-label="billingToDate" placeholder="DD/MM/YYYY"><span class="input-group-addon"><span class="fa fa-calendar">          </span></span>
+                          </div>
+                        </div>
+                        <div class="row filter-button-wrapper">
+                          <div class="col-xs-6"><a class="btn btn-default clear-billing-date" data-clear-filter>Clear</a></div>
+                          <div class="col-xs-6"><a class="btn btn-default" data-update-activitydate>Update  </a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>    
+    </div>    
+    

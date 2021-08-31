@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "Roboto";
+  src: local(Roboto Regular), url("../../../content/font/roboto/Roboto-Regular.eot");
+  src: url("../../../content/font/roboto/Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("../../../content/font/roboto/Roboto-Regular.woff2") format("woff2"), url("../../../content/font/roboto/Roboto-Regular.woff") format("woff"), url("../../../content/font/roboto/Roboto-Regular.ttf") format("truetype");
+  font-weight: 400; }
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../../../content/font/roboto/Roboto-Bold.eot");
+  src: url("../../../content/font/roboto/Roboto-Bold.eot?#iefix") format("embedded-opentype"), url("../../../content/font/roboto/Roboto-Bold.woff2") format("woff2"), url("../../../content/font/roboto/Roboto-Bold.woff") format("woff"), url("../../../content/font/roboto/Roboto-Bold.ttf") format("truetype");
+  font-weight: 700; }
+
+body, html {
+  font-family: 'Roboto', sans-serif; }
+
+.main {
+  background-color: #eef5f9; }

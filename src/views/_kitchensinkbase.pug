@@ -1,0 +1,40 @@
+doctype html
+html(lang="en")
+  head
+    meta(name="viewport",content="width=device-width, initial-scale=1")
+    title Welcome | XD Studio
+    block styles
+      link(rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css")
+      link(rel="stylesheet",href="css/style.css") 
+      link(rel="stylesheet",href="css/kitchensink.css")
+    block scripts
+      script(src="js/kitchensink/clipboard.min.js")
+      script(src="js/vendor/jquery.min.js")
+      script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js")
+      script(src="js/vendor/bootstrap.min.js")
+      script(src="js/vendor/jszip.js")
+
+  body
+    #wrapper
+      header
+        #header.container-fluid
+            .row
+                include components/kitchensink/kitchensink-header
+      main
+        #content.container
+            block body
+      footer
+          .container-fluid.kitchensink-footer
+            .container
+              include components/kitchensink/kitchensink-footer
+            .row.footer-copy.bg-primary
+              .col-lg-12
+                p.text-center.text-white.p-3 &copy;2019 lorem ipsum. All Rights are reserved.                         
+    block scripts                    
+          script(src="js/kitchensink.js")
+          script(src="js/kitchensink/clipboard.js")
+          script(src="js/components/nav/tab.js")          
+          script(src="js/components/popover/custom-popover.js")
+          script(src="js/components/ems-components/cookie.js")
+          script(src="js/components/ems-components/accordion.js")
+          script(src="js/components/scrolltopbottom/scroll2topbottom.js")

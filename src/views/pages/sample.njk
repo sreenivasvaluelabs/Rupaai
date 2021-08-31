@@ -1,0 +1,93 @@
+{% extends "_base.njk" %}
+{% set ctaText='An email confirmation has been sent to your inbox. Call in to cancel/modify booking. '%}
+{% set pageHeading="Gas Reconnect" %}
+{% set pageSubHeading="Step 3 of 5" %}
+{% set startBtn = "Request Appointment" %}
+{% set cancelBtn = "Cancel" %}
+{%set pageTitle="Appointment Date allow" %}
+{%set newVariable= testVariable %}
+{% block content %}
+<div class="row">
+    <div class="col-md-12">
+        <div class="my-account-heading-wrapper">
+            <h1>{{pageHeading}}</h1>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+<div class="row cta-texts">
+    <p style="color: #919191">{{pageSubHeading}}</p>
+    <h1>{{pageTitle}}</h1>                           
+</div>
+<div class="appointment-form">
+    <form>
+        <div class="form-group">
+            <h6>Day & Time</h6>
+            <p>Please pick a day and time below</p>
+        </div>
+        <div id="months">
+            <div class="owl-carousel owl-theme owl-loaded months" id="owl-month-date">    
+                            
+            </div>
+        </div>
+        <div id="dates">
+            <div class="owl-carousel owl-theme dates">
+                <div class="item lazyOwl"><h4>Mon</h4><p>1</p></div>
+                <div class="item lazyOwl"><h4>Tue</h4><p>2</p></div>
+                <div class="item lazyOwl"><h4>Wed</h4><p>3</p></div>
+                <div class="item lazyOwl"><h4>Thurs</h4><p>4</p></div>
+                <div class="item lazyOwl"><h4>Fri</h4><p>5</p></div>
+                <div class="item lazyOwl"><h4>Sat</h4><p>6</p></div>
+                <div class="item lazyOwl"><h4>Sun</h4><p>7</p></div>
+                
+                <div class="item lazyOwl"><h4>Mon</h4><p>8</p></div>
+                <div class="item lazyOwl"><h4>Tue</h4><p>9</p></div>
+                <div class="item lazyOwl"><h4>Wed</h4><p>10</p></div>
+                <div class="item lazyOwl"><h4>Thurs</h4><p>11</p></div>
+                <div class="item lazyOwl"><h4>Fri</h4><p>12</p></div>
+                <div class="item lazyOwl"><h4>Sat</h4><p>13</p></div>
+                <div class="item lazyOwl"><h4>Sun</h4><p>14</p></div>
+                
+                <div class="item lazyOwl"><h4>Mon</h4><p>15</p></div>
+                <div class="item lazyOwl"><h4>Tue</h4><p>16</p></div>
+                <div class="item lazyOwl"><h4>Wed</h4><p>17</p></div>
+                <div class="item lazyOwl"><h4>Thurs</h4><p>18</p></div>
+                <div class="item lazyOwl"><h4>Fri</h4><p>19</p></div>
+                <div class="item lazyOwl"><h4>Sat</h4><p>20</p></div>
+                <div class="item lazyOwl"><h4>Sun</h4><p>21</p></div>
+                
+                <div class="item lazyOwl"><h4>Mon</h4><p>22</p></div>
+                <div class="item lazyOwl"><h4>Tue</h4><p>23</p></div>
+                <div class="item lazyOwl"><h4>Wed</h4><p>24</p></div>
+                <div class="item lazyOwl"><h4>Thurs</h4><p>25</p></div>
+                <div class="item lazyOwl"><h4>Fri</h4><p>26</p></div>
+                <div class="item lazyOwl"><h4>Sat</h4><p>27</p></div>
+                <div class="item lazyOwl"><h4>Sun</h4><p>28</p></div>
+                
+                <div class="item lazyOwl"><h4>Mon</h4><p>29</p></div>
+                <div class="item lazyOwl"><h4>Tue</h4><p>30</p></div>
+                <div class="item lazyOwl"><h4>Wed</h4><p>31</p></div>
+            </div>
+        </div>
+        <div id="timings">
+            <ul class="date-timings">
+                <li>8:00 am - 12:00 pm</li>
+                <li>1:00 pm - 4:00 pm</li>
+                <li>5:00 pm - 9:00 pm</li>
+            </ul>
+            <ul class="no-timings">
+                <li>No times available</li>
+            </ul>
+        </div>
+        <div class="row cta-texts">
+            <div class="start-button-class">
+            <a href="#">{{startBtn}}</a>
+        </div>
+        <div class="start-button-class cancel">
+            <a href="#">{{cancelBtn}}</a>
+        </div>
+        </div>
+    </form>
+</div>
+
+{% endblock %}

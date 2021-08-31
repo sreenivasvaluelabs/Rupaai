@@ -1,0 +1,22 @@
+$white: #fff;
+$grey: #555;
+#back2Top {    
+    line-height: 40px;
+    overflow: hidden;
+    z-index: 99999;
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: $white;
+    color: $grey;
+    font-size: 18px;
+    .gotop {
+      position: absolute;
+      right: 40px;
+      font-size: 22px;
+      bottom: 50px;
+      cursor: pointer;
+    }
+  }  

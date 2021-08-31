@@ -1,0 +1,16 @@
+{% set messages = [{ title: "Lorem Ipsum" , description : "Lorem IpsumLorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum" }] %}
+{% block content %}
+<div class="container" >
+    <div class="row">
+        <div class="col-lg-12">
+            <div id="back2Top" class="shadow border px-4">
+            {% for message in messages %}
+                <h3>{{message.title}}</h3>
+                <p>{{message.description}}</p> 
+            {% endfor %}
+                <i class="fa fa-plus-circle gotop float-right"></i>            
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

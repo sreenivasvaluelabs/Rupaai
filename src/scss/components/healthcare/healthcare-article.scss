@@ -1,0 +1,29 @@
+$white: #fff;
+$black: #000;
+$nan: #474b55;
+$grey: #808080;
+$lightergrey: #333333;
+
+.article-container {
+    .article-lead-image {
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    .article-date {
+        margin: 1rem 0;
+    }
+    .article-title{
+        color: $black;
+    }
+    .article-body{
+        p{
+            color: $black;           
+        }
+    }
+}
+.article-title, .article-author, .article-summary{
+     height: 25px;
+    overflow: hidden;
+}

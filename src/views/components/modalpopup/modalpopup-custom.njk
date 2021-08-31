@@ -1,0 +1,19 @@
+    <button type="button" class="btn btn-dark {{customClass}}" data-toggle="modal" data-target="#{{customId}}">{{title}}{{linktitle}}</button>
+    <div class="modal fade" id="{{customId}}" role="dialog">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header bg-secondary">
+            <h4 class="modal-title text-white">{{modalTitle}}</h4>
+            <button type="button" class="close text-white" data-dismiss="modal">&times;</button>                    
+            </div>
+            <div class="modal-body">
+            <p>{{modalBodyContent}}</p>
+                <p><strong> {{highlighetdContent}} </strong></p>
+            </div>
+            <div class="modal-footer d-flex justify-content-center">
+            <button type="button" class="btn btn-secondary px-4 mx-4" data-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-secondary px-4 mx-4" data-dismiss="modal">Continue</button>
+            </div>
+        </div>
+        </div>
+    </div>

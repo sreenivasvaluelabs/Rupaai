@@ -1,0 +1,14 @@
+.custom-img-desc-container {
+  padding: 10px;
+  border: 1px solid #ccc;
+  width: 100%; }
+  .custom-img-desc-container .img-desc-img {
+    width: 49%;
+    display: inline-block; }
+  .custom-img-desc-container .tile-desc-body {
+    float: right;
+    width: 49%; }
+    .custom-img-desc-container .tile-desc-body .tile-desc-title {
+      font-weight: bold;
+      font-size: 16px;
+      margin-bottom: 10px; }

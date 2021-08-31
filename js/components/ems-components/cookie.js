@@ -1,0 +1,1 @@
+$(document).ready(function(){setTimeout(function(){$("#divCookiclose").fadeIn(200)},4e3),$("#btnCookieClose, #btnCookieClose1").click(function(){$("#divCookiclose").fadeOut(200)})});

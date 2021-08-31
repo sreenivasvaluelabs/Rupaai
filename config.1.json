@@ -1,0 +1,14 @@
+{
+    "src": {
+        "sass": "src/scss",
+        "pug": "src/views",
+        "njk": "src/views",
+        "js": "src/js"
+    },
+    "dest": {
+        "css": "content/css",
+        "html": "content/html",
+        "js":"content/js"
+    }
+   
+}

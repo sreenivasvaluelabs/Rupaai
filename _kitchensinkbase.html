@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome | XD Studio</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/kitchensink.css">
+    <script src="js/kitchensink/clipboard.min.js"></script>
+    <script src="js/vendor/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/vendor/jszip.js"></script>
+  </head>
+  <body>
+    <div id="wrapper">
+      <header>
+        <div class="container-fluid" id="header">
+          <div class="row">
+            <div class="col xs-12 col-md-3">
+              <div class="kitchensink-header"><img class="img-responsive" src="img/share-avanade-logo.jpg" alt="logo" width="100px"></div>
+            </div>
+            <div class="col-xs-12 col-md-9">
+              <div class="kitchensink-tabheading">
+                <div class="row component-content"> 
+                  <div class="col-md-3 components-wrapper">    
+                    <div class="dropdown components-dropdown dropdown-accordion" id="accordion1"><a class="header-dropdown dropdown-toggle" href="#" data-toggle="dropdown">Components</a>
+                      <div class="dropdown-menu" role="menu" aria-labelledby="dLabel">           
+                        <div class="card">
+                          <div class="card-header" id="header1"><a class="card-link" data-toggle="collapse" href="#collapseOne">Carousel                                </a></div>
+                          <div class="collapse" id="collapseOne" aria-labelledby="header1" data-parent="#accordion1"> 
+                            <div class="card-body scrollable-menu scrollbar">
+                              <ul>
+                                <li><a class="components-display-link" href="#" data-section-id="custom-carousel">Carousel</a><br></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="card-header" id="header2"><a class="card-link" data-toggle="collapse" href="#collapseBanner">Banner Image                                </a></div>
+                          <div class="collapse" id="collapseBanner" aria-labelledby="header2" data-parent="#accordion1"> 
+                            <div class="card-body scrollable-menu scrollbar">
+                              <ul>
+                                <li><a class="components-display-link" href="#" data-section-id="banner-img">Banner Image</a><br></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="card-header" id="header3"><a class="card-link" data-toggle="collapse" href="#collapseNavbar">Navbar                                </a></div>
+                          <div class="collapse" id="collapseNavbar" aria-labelledby="header3" data-parent="#accordion1"> 
+                            <div class="card-body scrollable-menu scrollbar">
+                              <ul>
+                                <li><a class="components-display-link" href="#" data-section-id="navbar">Navbar</a><br></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="card-header" id="header4"><a class="card-link" data-toggle="collapse" href="#collapseCards">Cards                                </a></div>
+                          <div class="collapse" id="collapseCards" aria-labelledby="header4" data-parent="#accordion1"> 
+                            <div class="card-body scrollable-menu scrollbar">
+                              <ul>
+                                <li><a class="components-display-link" href="#" data-section-id="card-img">Card Image</a><br></li>
+                                <li><a class="components-display-link" href="#" data-section-id="card-img-overlay">Card Image overlay</a><br></li>
+                                <li><a class="components-display-link" href="#" data-section-id="card-tile">Card Tile</a><br></li>
+                                <li><a class="components-display-link" href="#" data-section-id="card-desc">Card Description</a><br></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="card-header" id="header5"><a class="card-link" data-toggle="collapse" href="#collapseNav">Nav                               </a></div>
+                          <div class="collapse" id="collapseNav" aria-labelledby="header5" data-parent="#accordion1"> 
+                            <div class="card-body scrollable-menu scrollbar">
+                              <ul>
+                                <li><a class="components-display-link" href="#" data-section-id="tabs">Tabs</a><br></li>
+                                <li><a class="components-display-link" href="#" data-section-id="pills">Pills</a><br></li>
+                                <li><a class="components-display-link" href="#" data-section-id="inline-list">Nav List</a><br></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="card-header" id="header6"><a class="card-link" data-toggle="collapse" href="#collapsescrollTopBottom">Scroll Top Bottom                               </a></div>
+                          <div class="collapse" id="collapsescrollTopBottom" aria-labelledby="header6" data-parent="#accordion1"> 
+                            <div class="card-body scrollable-menu scrollbar">
+                              <ul>
+                                <li><a class="components-display-link" href="#" data-section-id="scrollTopBottom">Scroll Top Bottom</a><br></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="card-header" id="header7"><a class="card-link" data-toggle="collapse" href="#collapsebreadcrumb">Breadcrumb                               </a></div>
+                          <div class="collapse" id="collapsebreadcrumb" aria-labelledby="header7" data-parent="#accordion1"> 
+                            <div class="card-body scrollable-menu scrollbar">
+                              <ul>
+                                <li><a class="components-display-link" href="#" data-section-id="breadcrumb">Breadcrumb</a><br></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="card-header" id="header8"><a class="card-link" data-toggle="collapse" href="#collapsetestimonial">Testimonial                               </a></div>
+                          <div class="collapse" id="collapsetestimonial" aria-labelledby="header8" data-parent="#accordion1"> 
+                            <div class="card-body scrollable-menu scrollbar">
+                              <ul>
+                                <li><a class="components-display-link" href="#" data-section-id="testimonial">Testimonial</a><br></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="card-header" id="header9"><a class="card-link" data-toggle="collapse" href="#collapsetimeline">Timeline                               </a></div>
+                          <div class="collapse" id="collapsetimeline" aria-labelledby="header9" data-parent="#accordion1"> 
+                            <div class="card-body scrollable-menu scrollbar">
+                              <ul>
+                                <li><a class="components-display-link" href="#" data-section-id="timeline-component">Timeline</a><br></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="card-header" id="header10"><a class="card-link" data-toggle="collapse" href="#collapseatoms">Atoms                               </a></div>
+                          <div class="collapse" id="collapseatoms" aria-labelledby="header10" data-parent="#accordion1"> 
+                            <div class="card-body scrollable-menu scrollbar">
+                              <ul>
+                                <li><a class="components-display-link" href="#" data-section-id="custom-badge">Badge</a><br></li>
+                                <li><a class="components-display-link" href="#" data-section-id="spinner">Spinner</a><br></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="card-header" id="header11"><a class="card-link" data-toggle="collapse" href="#collapsepopover">Popover                               </a></div>
+                          <div class="collapse" id="collapsepopover" aria-labelledby="header11" data-parent="#accordion1"> 
+                            <div class="card-body scrollable-menu scrollbar">
+                              <ul>
+                                <li><a class="components-display-link" href="#" data-section-id="custom-popover">Popover</a><br></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="card-header" id="header12"><a class="card-link" data-toggle="collapse" href="#collapseprogressbar">Progress bar                               </a></div>
+                          <div class="collapse" id="collapseprogressbar" aria-labelledby="header12" data-parent="#accordion1"> 
+                            <div class="card-body scrollable-menu scrollbar">
+                              <ul>
+                                <li><a class="components-display-link" href="#" data-section-id="custom-progress">Progress bar</a><br></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="card-header" id="header13"><a class="card-link" data-toggle="collapse" href="#collapsetabaccordion">Responsive Tab Accordion                               </a></div>
+                          <div class="collapse" id="collapsetabaccordion" aria-labelledby="header13" data-parent="#accordion1"> 
+                            <div class="card-body scrollable-menu scrollbar">
+                              <ul>
+                                <li><a class="components-display-link" href="#" data-section-id="tab-accordion">Responsive Tab Accordion</a><br></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 components-wrapper">    
+                    <div class="dropdown components-dropdown dropdown-accordion" id="accordion2"><a class="header-dropdown dropdown-toggle" href="#" data-toggle="dropdown">EMS Components</a>
+                      <div class="dropdown-menu" role="menu" aria-labelledby="dLabel">           
+                        <div class="card">
+                          <div class="card-header" id="headeracc1"><a class="card-link" data-toggle="collapse" href="#collapseArticle">Article                                </a></div>
+                          <div class="collapse" id="collapseArticle" aria-labelledby="headeracc1" data-parent="#accordion2"> 
+                            <div class="card-body scrollable-menu scrollbar">
+                              <ul>
+                                <li><a class="components-display-link" href="#" data-section-id="article">Article</a><br></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="card-header" id="headeracc2"><a class="card-link" data-toggle="collapse" href="#collapseAccordion">Accordion                                </a></div>
+                          <div class="collapse" id="collapseAccordion" aria-labelledby="headeracc2" data-parent="#accordion2"> 
+                            <div class="card-body scrollable-menu scrollbar">
+                              <ul>
+                                <li><a class="components-display-link" href="#" data-section-id="ems-accordion">Accordion</a><br></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="card-header" id="headeracc3"><a class="card-link" data-toggle="collapse" href="#collapseCTA">CTA                                </a></div>
+                          <div class="collapse" id="collapseCTA" aria-labelledby="headeracc3" data-parent="#accordion2"> 
+                            <div class="card-body scrollable-menu scrollbar">
+                              <ul>
+                                <li><a class="components-display-link" href="#" data-section-id="ems-cta">CTA</a><br></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="card-header" id="headeracc4"><a class="card-link" data-toggle="collapse" href="#collapseEmsCarousel">Carousel                                </a></div>
+                          <div class="collapse" id="collapseEmsCarousel" aria-labelledby="headeracc4" data-parent="#accordion2"> 
+                            <div class="card-body scrollable-menu scrollbar">
+                              <ul>
+                                <li><a class="components-display-link" href="#" data-section-id="ems-carousel">EMS-Carousel</a><br></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="card-header" id="headeracc5"><a class="card-link" data-toggle="collapse" href="#collapsemodal">Modal Popup                                </a></div>
+                          <div class="collapse" id="collapsemodal" aria-labelledby="headeracc5" data-parent="#accordion2"> 
+                            <div class="card-body scrollable-menu scrollbar">
+                              <ul>
+                                <li><a class="components-display-link" href="#" data-section-id="modalPopup">Modal Popup </a><br></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3"><a class="btn btn-outline-light px-4" href="" id="downloadjs" onClick="downloadComponents(this.id)" download>Download</a></div>
+                  <div class="col-md-3"><a class="btn btn-outline-light px-4" href="#" id="customize">customize</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <div class="container" id="content">
+        </div>
+      </main>
+      <footer>
+        <div class="container-fluid kitchensink-footer">
+          <div class="container">
+            <div class="footer-top col-lg-12">
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="footer-box">
+                    <h5 class="footer-box-title">Our Key Service</h5>
+                    <div class="menu-services-menu-container">
+                      <ul>
+                        <li><a href="#">Magento Development</a></li>
+                        <li><a href="#">Development</a></li>
+                        <li><a href="#">Magento </a></li>
+                        <li><a href="#">Development  </a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="footer-box">
+                    <h5 class="footer-box-title">Useful Links</h5>
+                    <div class="menu-useful-links-container">
+                      <ul>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="">Terms and Conditions</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">Sitemap</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="footer-box">
+                    <h5 class="footer-box-title">Contact us</h5>
+                    <ul class="footer-contact">
+                      <li><a href="#"> <i class="fa fa-envelope"></i><span>info@asdsaf@gmail.com</span></a></li>
+                      <li><a href="#"><i class="fa fa-skype icon-skype"></i><span>skype</span></a></li>
+                      <li><a href="tel:+1 123 234 6789"> <i class="fa fa-phone icon-phone"></i><span>+1 123 234 6789</span></a><br><a class="margin-left" href="tel:+44 (0) 124235347">
+                           +44 (0) 124235347 </a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="footer-box">
+                    <div class="footer-search">
+                      <div class="input-group mb-3">
+                        <input class="form-control border-1 border-dark" type="text" placeholder="Search">
+                        <div class="input-group-append">
+                          <button class="btn btn-success" type="submit">Go</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="footer-address my-3">506, lorem ipsum, lorem ipsum, lorem ipsum 380 015, CHENNAI - INDIA.</div>
+                    <h5 class="footer-box-title">Find us on</h5>
+                    <ul class="footer-social">
+                      <li class="d-inline-block bg-info"><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                      <li class="d-inline-block bg-danger"><a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                      <li class="d-inline-block bg-success"><a href="https://www.linkedin.com//" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                      <li class="d-inline-block bg-primary"><a href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row footer-copy bg-primary">
+            <div class="col-lg-12">
+              <p class="text-center text-white p-3">&copy;2019 lorem ipsum. All Rights are reserved.                         </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="js/kitchensink.js"></script>
+    <script src="js/kitchensink/clipboard.js"></script>
+    <script src="js/components/nav/tab.js">         </script>
+    <script src="js/components/popover/custom-popover.js"></script>
+    <script src="js/components/ems-components/cookie.js"></script>
+    <script src="js/components/ems-components/accordion.js"></script>
+    <script src="js/components/scrolltopbottom/scroll2topbottom.js"></script>
+  </body>
+</html>

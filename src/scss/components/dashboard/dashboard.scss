@@ -1,0 +1,142 @@
+@import '../../common/font.scss';
+@import '../../common/mixins';
+@import '../../common/variables';
+
+#dashboard-carousel {
+    .carousel-inner {
+        box-shadow: 0 3px 6px rgba(0,0,0,.2);
+        .carousel-item {
+            .view {
+                img {
+                    height: 430px;
+                    
+                }
+            }
+            .carousel-caption {
+                top: 19%;
+                left: 10%;
+                width: 300px;
+                text-align: left;                
+            }
+        }
+    }
+}
+.trending-components {
+    .heading {
+        font-size: 20px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        color: $dashboard-dark-blue; 
+        margin: 25px 0;       
+    }
+    .card-img-top {
+        margin-top: 15px;
+        height: 200px;
+        overflow: hidden;
+    }
+    .trending-comp-card {
+        box-shadow: 0 3px 6px rgba(0,0,0,.2);
+        img {
+            box-shadow: 0 3px 6px rgba(0,0,0,.2);
+        }
+        a{
+            &.arrow-circle {
+                position: absolute;
+                width: 39px;
+                height: 39px;
+                background-color: $dashboard-grey;
+                box-shadow: 0 3px 6px rgba(0,0,0,.2);
+                top: 175px;
+                right: 15px;
+                i {
+                    font-size: 20px;
+                    color: #fff;
+                    margin: 8px;
+                }
+                &:hover ~ .card-body {
+                    .card-title {
+                        color: $dashboard-blue;
+                    }
+                }
+                &:hover, &:hover ~ .card-footer-data {
+                    background: $dashboard-blue;                                        
+                }                
+            }
+            &.download-circle {
+                position: absolute;
+                width: 39px;
+                height: 39px;
+                box-shadow: 0 3px 6px rgba(0,0,0,.2);
+                top: 175px;
+                right: 75px;
+                background: url(../img/download-folder.svg) no-repeat 12px 10px $dashboard-grey;
+                &:hover {
+                    background: url(../img/download-folder.svg) no-repeat 12px 10px $dashboard-blue;
+                }
+                i {
+                    font-size: 14px;
+                    color: #fff;
+                    margin: 12px;
+                }
+            }
+
+        }        
+        .card-body {
+            .card-title {
+                font-size: 16px;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 400;
+                color: $dashboard-grey;  
+                line-height: 19px;
+                border-bottom: 1px solid rgba(0,0,0,.2);
+                &:hover {
+                    color: $dashboard-blue;
+                }
+            }
+            .card-text {
+                font-size: 16px;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 400;
+                color: $dashboard-grey;  
+                line-height: 26px;                
+            }            
+        }
+        .card-footer-data {
+            background-color: $dashboard-grey;
+            color: $white;           
+            padding: 4px 0;
+            &:hover {
+                background: $dashboard-blue;
+            }
+            .view-date {
+                font-size: 14px;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 400;
+            }
+            .chat-reply {
+                font-size: 12px;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 400;
+            } 
+            .notification {
+                font-size: 13px;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 400;
+            }
+        }
+    }
+    .view-more {
+        margin: 25px 0;
+        button {
+            padding: 12px 24px;
+        }
+    }
+    .show-more {
+       display: none;
+    }
+}
+
+// tabs-components
+
+.trending-components.tabs-components .trending-comp-card a.arrow-circle,
+.trending-components.tabs-components .trending-comp-card a.download-circle{top: 160px; z-index: 999;}

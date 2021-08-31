@@ -1,0 +1,1 @@
+$(".component-base .mega-dropdown-menu li a").on("click",function(o){if(""!==this.hash){var n=this.hash;$(".navbar-toggle").click(),$("html, body").animate({scrollTop:$(n).offset().top-100},800,function(){window.location.hash=n})}});

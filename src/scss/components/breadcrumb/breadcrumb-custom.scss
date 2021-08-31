@@ -1,0 +1,12 @@
+$black: #000;
+
+.custom-breadcrumb {
+    li {
+        +li {
+            &::before {
+                content: '>';
+                color: $black;
+            }
+        }            
+    }
+ }

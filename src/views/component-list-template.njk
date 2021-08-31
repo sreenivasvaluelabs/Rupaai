@@ -1,0 +1,53 @@
+   
+<div class="dropdown-components trending-components tabs-components mb-4">
+        {# <h3 class="heading">Dropdown Menus</h3> #}
+        <div class="row "> 
+        {%for item in dropdownCompItems %}             
+            {%if loop.index > 6 %}
+            <div class="col-md-6 mb-4 show-more">
+                <div class="card trending-comp-card position-relative">                                    
+                    <img class="card-img-top img-fluid" src="{{item.compimage}}" alt="Card image">
+                    <div class="card-body">
+                        <h5 class="card-title pb-2">{{item.cardtitle}}</h5>
+                        <p class="card-text">{{item.carddesc}}</p>                        
+                    </div>
+                    <a href="{{item.id}}" class="arrow-circle rounded-circle text-center" id="{{item.compid}}" ><i class="fa fa-angle-right"></i></a>
+                    <a href="#" class="download-circle rounded-circle text-center"></a>                  
+                    <div class="card-footer-data text-center">
+                        <span class="view-date mr-3"><i class="fa fa-clock-o"></i> 19/03/2019 </span>
+                        <span class="chat-reply mr-3"><i class="fa fa-comments"></i> 12 </span>
+                        <span class="notification"><i class="fa fa-twitter"></i> 3 </span>
+                    </div>
+                    </div>
+            </div>
+            {%else%}            
+            <div class="col-md-6 mb-4">
+                <div class="card trending-comp-card position-relative">                                    
+                   <div class="recent-component-view">
+                       <div class="card-img-top">
+                           {% set title="continue"%}
+                           {% include item.compimage +".njk" %}
+                        </div> 
+                   </div>
+                    <a href="{{item.id}}" class="arrow-circle rounded-circle text-center" id="{{item.compid}}" ><i class="fa fa-angle-right"></i></a>
+                     <a href="#" class="download-circle rounded-circle text-center"></a>
+                    <div class="card-body">
+                        <h5 class="card-title pb-2">{{item.cardtitle}}</h5>
+                        <p class="card-text">{{item.carddesc}}</p>                        
+                    </div>                                      
+                    <div class="card-footer-data text-center">
+                        <span class="view-date mr-3"><i class="fa fa-clock-o"></i> 19/03/2019 </span>
+                        <span class="chat-reply mr-3"><i class="fa fa-comments"></i> 12 </span>
+                        <span class="notification"><i class="fa fa-twitter"></i> 3 </span>
+                    </div>
+                    </div>
+            </div>
+
+            {% endif%}
+
+            {% endfor %}
+        </div>
+        <div class="view-more text-center">
+            <button class="btn btn-primary rounded-0 ">VIEW MORE <span><i class="fa fa-angle-double-right"></i></span></button>
+        </div>
+    </div>

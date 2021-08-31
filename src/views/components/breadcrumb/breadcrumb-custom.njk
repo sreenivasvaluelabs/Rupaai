@@ -1,0 +1,20 @@
+{% set navList = [{ title: "Home"},{title: "About"}, {title: "Contact Us"}] %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 custom-breadcrumb">
+            <nav aria-label="breadcrumb">
+                <ul class="breadcrumb">
+                    {%for item in navList %}
+                    {%if loop.last == true %}
+                    <li class="breadcrumb-item active">{{item.title}}</li>
+                    {%else%}
+                     <li class="breadcrumb-item">
+                        <a href="#">{{item.title}}</a>
+                    </li>
+                    {%endif%}                   
+                    {%endfor%}
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div> 

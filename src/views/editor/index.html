@@ -1,0 +1,68 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/3.19.0/codemirror.css">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link rel="stylesheet" href="css/editor/style-editor.css">
+
+<div class="live-editor">
+<div class="live-editshows">
+  <div class="liveedit-view">
+    <span class="component-title">Components</span>
+    <span class="liveedit">Live Edit</span>
+  </div>
+  {# <div class="shows"></div> #}
+</div>
+
+  <div class="responsive-tiles">
+        <span class="component-title">Components</span>
+        <button onclick="reset();" class="reset"><i class="fa fa-undo"></i></button>
+        <button onclick="resize(1024)" class="desktop-monitor"><img src="img/desktop-monitor.png" alt=""></button>
+        <button onclick="resize(768)"><img src="img/computer-tablet.png" alt=""></button>
+        <button onclick="resize(320)"><img src="img/mobile-phone.png" alt=""></button>
+  </div>
+
+  <div id="wrap" class="codeEdit-wrap">
+    <div id="output" class="col-md-12 myResponsiveWindow">
+      <iframe></iframe>
+    </div>
+    <!-- Code Editors -->
+    
+    <div class="live-panel-view">
+      <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="panel panel-default">
+          <div class="panel-heading active" role="tab" id="headingOne">
+            <h4 class="panel-title">
+              <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Live Code Editor
+                <i class="fa fa-angle-down"></i>
+              </a>
+            </h4>
+          </div>
+        <div id="collapseOne" class="panel-collapse collapse in show" role="tabpanel" aria-labelledby="headingOne">
+          <div class="panel-body">
+            <div id="code_editors" class="">
+              <div id="html" class="code_box panel-left resizable">
+                <h3><i class="fa fa-cog"></i>HTML<span class="cpy"data-clipboard-target="#html .CodeMirror-code"><i class="fa fa-copy"></i></span></h3>
+                <textarea name="html" id="textar"></textarea>
+              </div>
+              <div class="splitter" style="touch-action: none;">
+            </div>
+              <div id="css" class="code_box panel-left resizable">
+                <h3><i class="fa fa-cog"></i>CSS<span class="cpy"data-clipboard-target="#css .CodeMirror-code"><i class="fa fa-copy"></i></span></h3>
+                <textarea name="css"></textarea>
+              </div>
+              <div class="splitter" style="touch-action: none;">
+            </div>
+              <div id="js" class="code_box panel-right">
+                <h3><i class="fa fa-cog"></i>JavaScript<span class="cpy"data-clipboard-target="#js .CodeMirror-code"><i class="fa fa-copy"></i></span></h3>
+                <textarea name="js"></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{# <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> #}
+
+
+

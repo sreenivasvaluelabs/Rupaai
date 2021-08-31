@@ -1,0 +1,12 @@
+{% set spinnerTypes=[{type: "border"}, {type: "grow"}]%}
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+        {%for i in spinnerTypes %}
+            <div class="spinner-{{i.type}} text-info"></div>
+        {%endfor%}
+        </div>
+    </div>
+</div>
+{% endblock %}

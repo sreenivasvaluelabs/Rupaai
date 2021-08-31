@@ -1,0 +1,54 @@
+{% set heading = "Top Trending Components" %}
+{% set trendingCompItems = [
+{compimage:"img/compo-2.png", cardtitle:"Dropdowns", carddesc:"Some quick, example text to build on the card title and make up the bulk of the card’s content."},
+{compimage:"img/compo-3.png", cardtitle:"Tabs", carddesc:"Some quick example text to build on the card title and make up the bulk of the card’s content."},
+{compimage:"img/compo-1.png", cardtitle:"Jumbotron", carddesc:"Some quick example text to build on the card title and make up the bulk of the card’s content."}
+] %}
+    <div class="trending-components mb-4">
+        <h3 class="heading">{{heading}}</h3>
+        <div class="row "> 
+        {%for item in trendingCompItems %}             
+            {%if loop.index > 6 %}
+            <div class="col-md-4 mb-4 show-more">
+                <div class="card trending-comp-card position-relative">                                    
+                    <img class="card-img-top img-fluid" src="{{item.compimage}}" alt="Card image">
+                    <div class="card-body">
+                        <h5 class="card-title pb-2">{{item.cardtitle}}</h5>
+                        <p class="card-text">{{item.carddesc}}</p>                        
+                    </div>
+                    <a href="#" class="arrow-circle rounded-circle text-center"><i class="fa fa-angle-right"></i></a>                  
+                    <div class="card-footer-data text-center">
+                        <span class="view-date mr-3"><i class="fa fa-clock-o"></i> 19/03/2019 </span>
+                        <span class="chat-reply mr-3"><i class="fa fa-comments"></i> 12 </span>
+                        <span class="notification"><i class="fa fa-twitter"></i> 3 </span>
+                    </div>
+                    </div>
+            </div>
+            {%else%}            
+            <div class="col-md-4 mb-4">
+                <div class="card trending-comp-card position-relative">                                    
+                   <div class="recent-component-view">
+                        <img class="card-img-top img-fluid" src="{{item.compimage}}" alt="Card image">
+                   </div>
+                    <a href="#" class="arrow-circle rounded-circle text-center"><i class="fa fa-angle-right"></i></a>
+                    <div class="card-body">
+                        <h5 class="card-title pb-2">{{item.cardtitle}}</h5>
+                        <p class="card-text">{{item.carddesc}}</p>                        
+                    </div>                                      
+                    <div class="card-footer-data text-center">
+                        <span class="view-date mr-3"><i class="fa fa-clock-o"></i> 19/03/2019 </span>
+                        <span class="chat-reply mr-3"><i class="fa fa-comments"></i> 12 </span>
+                        <span class="notification"><i class="fa fa-twitter"></i> 3 </span>
+                    </div>
+                    </div>
+            </div>
+
+            {% endif%}
+
+            {% endfor %}
+        </div>
+        <div class="view-more text-center">
+            <button class="btn btn-primary rounded-0 ">VIEW MORE <span><i class="fa fa-angle-double-right"></i></span></button>
+    </div>
+</div>
+    

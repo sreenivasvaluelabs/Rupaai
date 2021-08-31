@@ -1,0 +1,10 @@
+@import 'mixins';
+@import 'variables';
+@import 'font';
+
+body, html {
+    font-family: 'Roboto', sans-serif;
+}
+.main {
+    @include background-opacity($body-bg, 100%);
+}
